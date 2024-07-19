@@ -9,43 +9,97 @@
      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    
    <style>
-    #Header {
+   
+   #Header {
         position: relative;
-        top:-1100px;
-        left: 350px;
+        top:-500px;
+        left: 450px;
         animation-name: headerAnimation;
         animation-duration: 4s;
         animation-iteration-count: 1;
-        
     }
+    @keyframes headerAnimation {
+        0% {
+            top: -1300px;
+        }
+        100% {
+            top:-500px
+        }
+      }
 
-    
-
+      .card-img-top {
+        height: 200px; 
+        object-fit: cover;
+    }
     </style>
 
   </head>
   <body>
-     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
       <button type="button" class="btn btn-outline-primary">Click me</button>
-      <div class="card" style="width: 17rem;">
-        <img src="https://nationaltoday.com/wp-content/uploads/2022/03/Lewis-Hamilton-Birthday--1200x834.jpg.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Lewis Hamilton</h5>
-          <p class="card-text">Lewis Hamilton is the most successful Formula 1 driver of all time who has driven for Mercedes and Mclaren.
-             He is tied for the most World Titles with 7 ,has the most race wins with 104 and a record breaking 9 British Grand Prix wins. </p>
-          <a href="#" class="btn btn-primary">go somewhere</a>
+
+
+      
+
+      <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 100%;">
+                <img src="https://nationaltoday.com/wp-content/uploads/2022/03/Lewis-Hamilton-Birthday--1200x834.jpg.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lewis Hamilton</h5>
+                    <p class="card-text">Lewis Hamilton is the most successful Formula 1 driver of all time who has driven for Mercedes and Mclaren.
+                      He is tied for the most World Titles with 7 ,has the most race wins with 104 and a record breaking 9 British Grand Prix wins.</p>
+                    <a href="https://www.youtube.com/watch?v=rD9J1EyUCIk" class="btn btn-primary">highlights</a>
+                </div>
+            </div>
         </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 100%;">
+            <img src= "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/t_16by9Centre/f_auto/q_auto/fom-website/manual/Hall%20of%20Fame%202024/GettyImages-72220757" class="card-img-top alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Michael Schumacher</h5>
+                  <p class="card-text">Michael Schumacher has driven for Ferarri, Benneton, Jordan, and Mercedes. 
+                    Lewis Hamilton is tied with him for the most world titles with 7</p>
+                  <a href="https://www.youtube.com/watch?v=VYSTaVBpwPg" class="btn btn-primary">highlights</a>
+              </div>
+          </div>
       </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqn0FERLNHBwhUJsDO_MdQgUojZqefEicKQ&s" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nico Roseberg</h5>
+                <p class="card-text">Nico Roseberg has won 1 world title and has driven for Mercedes and Williams. He had a bitter rivalry with his 
+                  at the time teamate Lewis Hamilton and is one of the only drivers to date to beat him</p>
+                <a href="https://www.youtube.com/watch?v=WJqx-ZRtP7c" class="btn btn-primary">highlights</a>
+            </div>
+        </div>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://www.usatoday.com/gcdn/-mm-/3294a6ad83f9d11bf63b42d8f62176ec0914b2d0/c=494-0-1786-1723/local/-/media/2018/03/18/USATODAY/USATODAY/636570026390883964-schumacher.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Michael Schumacher</h5>
-          <p class="card-text">Michael Schumacher has driven for Ferarri, Benneton, Jordan, and Mercedes. 
-            Lewis Hamilton is tied with him for the most world titles with 7..</p>
-          <a href="#" class="btn btn-primary">go somewhere</a>
-        </div>
-      </div>
+  </div>
+
     <h1 id="Header">Formula 1 Champions</h1>
     </body>
 </html>
